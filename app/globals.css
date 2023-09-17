@@ -3,4 +3,6 @@
 @tailwind utilities;
 
 :root {
+  --color-main-black: #020202;
+  --color-main-gray: #a2a6b0;
 }
