@@ -4,15 +4,27 @@ import { Schedule } from './schedule/Schedule';
 import { Adress } from './address/Adress';
 import { Socials } from './socials/Socials';
 import { useWindowSize } from '@/app/hooks/hooks';
+import { Logo } from './logo/Logo';
+import { ContactUs } from './address/contact-us/ContactUs';
 
 export const Info = () => {
   const windowSize = useWindowSize();
 
-  return (
-    <div className="h-11 bg-main-black flex items-center justify-between">
-      <Schedule />
-      {windowSize.width > 1400 ? <Adress /> : null}
-      <Socials />
-    </div>
-  );
+  if (windowSize.width > 1020) {
+    return (
+      <div className="h-11 bg-main-black flex items-center justify-between">
+        <Schedule />
+        <Adress />
+        <Socials />
+      </div>
+    );
+  } else {
+    return (
+      <div className="h-10 bg-main-black flex items-center justify-between">
+        <Logo />
+        <Schedule />
+        <ContactUs />
+      </div>
+    );
+  }
 };

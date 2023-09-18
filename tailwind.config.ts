@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         'main-black': 'var(--color-main-black)',
         'main-gray': 'var(--color-main-gray)',
+        'main-blue': 'var(--color-main-blue)',
       },
       screens: {
         mobile: '320px',
@@ -21,6 +22,9 @@ const config: Config = {
         desktop: '1280px',
         // => @media (min-width: 1280px) { ... }
         fullhd: '1800px',
+      },
+      fontSize: {
+        mobile: '0.6875rem',
       },
     },
   },
