@@ -10,7 +10,7 @@ import { ContactUs } from './address/contact-us/ContactUs';
 export const Info = () => {
   const windowSize = useWindowSize();
 
-  if (windowSize.width > 1020) {
+  if (windowSize.width > 1400) {
     return (
       <div className="h-11 bg-main-black flex items-center justify-between">
         <Schedule />
@@ -20,7 +20,7 @@ export const Info = () => {
     );
   } else {
     return (
-      <div className="h-10 bg-main-black flex items-center justify-between">
+      <div className="h-10 bg-main-black flex items-center justify-start">
         <Logo />
         <Schedule />
         <ContactUs />

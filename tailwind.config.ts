@@ -12,9 +12,10 @@ const config: Config = {
         'main-black': 'var(--color-main-black)',
         'main-gray': 'var(--color-main-gray)',
         'main-blue': 'var(--color-main-blue)',
+        'second-gray': 'var(--color-second-gray)',
       },
       screens: {
-        mobile: '320px',
+        mobile: '375px',
         tablet: '640px',
         // => @media (min-width: 640px) { ... }
         laptop: '1024px',
@@ -24,6 +25,7 @@ const config: Config = {
         fullhd: '1800px',
       },
       fontSize: {
+        mobile_small: '0.55rem',
         mobile: '0.6875rem',
       },
     },
