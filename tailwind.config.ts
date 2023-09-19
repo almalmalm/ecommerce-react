@@ -13,6 +13,7 @@ const config: Config = {
         'main-gray': 'var(--color-main-gray)',
         'main-blue': 'var(--color-main-blue)',
         'second-gray': 'var(--color-second-gray)',
+        'third-gray': 'var(--color-third-gray)',
       },
       screens: {
         mobile: '375px',
