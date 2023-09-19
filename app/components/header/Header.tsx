@@ -12,7 +12,7 @@ export const Header = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 500);
     return () => clearTimeout(timeout);
   }, []);
 

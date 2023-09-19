@@ -30,7 +30,7 @@ export const Navbar: React.FC<INavbarProps> = ({ mobile }) => {
     return (
       <div className=" h-[5.75rem] bg-white flex items-center">
         <Logo />
-        <NavigationMenu />
+        <NavigationMenu searchState={searchOpened} />
         <Search searchState={searchOpened} searchFunction={openSearch} />
         <Cart />
         <Account />
