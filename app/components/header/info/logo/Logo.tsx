@@ -1,21 +1,11 @@
-import { useWindowSize } from '@/app/hooks/hooks';
 import React from 'react';
 
-export const Logo = () => {
-  const windowSize = useWindowSize();
+interface ILogoProps {
+  mobile?: boolean;
+}
 
-  if (windowSize.width > 1400) {
-    return (
-      <div className="h-full flex items-center ml-3 mr-[2.8125rem]">
-        <svg width="34" height="41" viewBox="0 0 34 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M17.0331 0.945374L0.296875 10.8637V23.0708L17.0331 32.9891L30.4588 25.3596V28.9836L17.0331 36.9946L0.296875 26.8855V31.2725L17.0331 41L33.7693 31.2725V19.0653L20.3435 26.8855V23.0708L33.7693 15.0599V10.8637L17.0331 0.945374Z"
-            fill="#0156FF"
-          />
-        </svg>
-      </div>
-    );
-  } else {
+export const Logo: React.FC<ILogoProps> = ({ mobile }) => {
+  if (mobile) {
     return (
       <div className="h-full flex items-end ml-3 mr-5">
         <div className="bg-main-blue w-16 h-9 flex justify-center rounded-t-full pt-1">
@@ -26,6 +16,17 @@ export const Logo = () => {
             />
           </svg>
         </div>
+      </div>
+    );
+  } else {
+    return (
+      <div className="h-full flex items-center ml-3 mr-[2.8125rem]">
+        <svg width="34" height="41" viewBox="0 0 34 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M17.0331 0.945374L0.296875 10.8637V23.0708L17.0331 32.9891L30.4588 25.3596V28.9836L17.0331 36.9946L0.296875 26.8855V31.2725L17.0331 41L33.7693 31.2725V19.0653L20.3435 26.8855V23.0708L33.7693 15.0599V10.8637L17.0331 0.945374Z"
+            fill="#0156FF"
+          />
+        </svg>
       </div>
     );
   }

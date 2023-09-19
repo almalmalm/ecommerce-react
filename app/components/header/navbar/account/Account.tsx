@@ -1,12 +1,11 @@
-import { useWindowSize } from '@/app/hooks/hooks';
 import React from 'react';
 
-export const Account = () => {
-  const windowSize = useWindowSize();
-  if (windowSize.width > 1400) {
-    // 2.25rem
-    return <div className="w-9 h-9 rounded-full bg-[url('/avatar.svg')]"></div>;
-  } else {
+interface IAccountProps {
+  mobile?: boolean;
+}
+
+export const Account: React.FC<IAccountProps> = ({ mobile }) => {
+  if (mobile) {
     return (
       <div className="mr-3 border-2 rounded-full border-white p-1 ml-4">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -17,5 +16,7 @@ export const Account = () => {
         </svg>
       </div>
     );
+  } else {
+    return <div className="w-9 h-9 rounded-full bg-[url('/avatar.svg')]"></div>;
   }
 };
