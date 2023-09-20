@@ -37,7 +37,7 @@ export const HamburgerModal: React.FC<IHamburgerModalProps> = ({ onclick }) => {
           <HamburgerModalMenuItem link="/repairs" name="Repairs" />
           <a
             href="/our-deals"
-            className="text-main-blue px-[3.125rem] py-2 border-main-blue border-2 rounded-full w-fit font-semibold"
+            className="text-main-blue px-[3.125rem] py-[0.375rem] border-main-blue border-2 rounded-full w-fit font-semibold"
           >
             Our Deals
           </a>
