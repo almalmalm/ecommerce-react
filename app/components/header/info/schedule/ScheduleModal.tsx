@@ -21,9 +21,15 @@ export const ScheduleModal: React.FC<IScheduleModalProps> = ({ onclick }) => {
           </div>
           <div className="flex flex-col mb-[0.875rem]">
             <span className="mb-[0.438rem] text-xs">We are open:</span>
-            <span className="mb-2">Mon-Thu: 9:00 AM - 5:30 PM</span>
-            <span className="mb-2">Fr: 9:00 AM - 6:00 PM</span>
-            <span>Sat: 11:00 AM - 5:00 PM</span>
+            <span className="mb-2 font-semibold">
+              <span className="text-main-gray">Mon-Thu:</span> 9:00 AM - 5:30 PM
+            </span>
+            <span className="mb-2 font-semibold">
+              <span className="text-main-gray">Fr:</span> 9:00 AM - 6:00 PM
+            </span>
+            <span className="font-semibold">
+              <span className="text-main-gray">Sat:</span> 11:00 AM - 5:00 PM
+            </span>
           </div>
         </div>
         <div className="w-full h-[0.063rem] bg-second-gray"></div>
@@ -43,8 +49,18 @@ export const ScheduleModal: React.FC<IScheduleModalProps> = ({ onclick }) => {
         </div>
         <div className="w-full h-[0.063rem] bg-second-gray"></div>
         <div className="flex flex-col pt-[0.625rem] self-center">
-          <span>Phones: (00) 1234 5678</span>
-          <span>E-mail: shop@email.com</span>
+          <span>
+            Phones:{' '}
+            <a href="tel:002345678" className="text-main-blue">
+              (00) 1234 5678
+            </a>
+          </span>
+          <span>
+            E-mail:{' '}
+            <a href="mailto:shop@email.com" className="text-main-blue">
+              shop@email.com
+            </a>
+          </span>
         </div>
       </div>
       <div className="w-screen h-screen fixed top-0 left-0 bg-modal-shadow" onClick={onclick}></div>
