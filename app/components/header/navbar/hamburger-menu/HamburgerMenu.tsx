@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HamburgerModal } from './HamburgerModal';
+import { HamburgerModal } from './hamburger-menu-modal/HamburgerModal';
 
 export const HamburgerMenu = () => {
   const [modal, setModal] = useState(false);

@@ -1,10 +1,12 @@
 import React from 'react';
+import { HamburgerModalMenuItem } from './hamburger-menu-modal-item/HamburgerModalMenuItem';
 
 interface IHamburgerModalProps {
   onclick: () => void;
 }
 
 export const HamburgerModal: React.FC<IHamburgerModalProps> = ({ onclick }) => {
+  const handleCategory = () => {};
   return (
     <>
       <div className="h-screen w-4/5 fixed bg-white z-10 top-0 left-0 p-5">
@@ -23,6 +25,22 @@ export const HamburgerModal: React.FC<IHamburgerModalProps> = ({ onclick }) => {
               <path d="M13.7258 1L1.80585 12.9199" stroke="black" strokeWidth="2" strokeLinecap="round" />
             </svg>
           </div>
+        </div>
+        <div className="w-full h-[0.063rem] bg-second-gray my-5"></div>
+        <div className="flex flex-col gap-4 text-[0.813rem]">
+          <HamburgerModalMenuItem link="/laptops" name="Laptops" />
+          <HamburgerModalMenuItem link="/desktop-pcs" name="Desktop PCs" />
+          <HamburgerModalMenuItem link="/networking-devices" name="Networking Devices" />
+          <HamburgerModalMenuItem link="/printers-and-scanners" name="Printers & Scanners" />
+          <HamburgerModalMenuItem link="/pc-parts" name="PC Parts" />
+          <HamburgerModalMenuItem link="/all-other-products" name="All Other Products" />
+          <HamburgerModalMenuItem link="/repairs" name="Repairs" />
+          <a
+            href="/our-deals"
+            className="text-main-blue px-[3.125rem] py-2 border-main-blue border-2 rounded-full w-fit font-semibold"
+          >
+            Our Deals
+          </a>
         </div>
       </div>
       <div className="w-screen h-screen fixed top-0 left-0 bg-modal-shadow" onClick={onclick}></div>
