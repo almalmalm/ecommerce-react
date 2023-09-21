@@ -1,5 +1,11 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
+import React, { useState } from 'react';
+import slider_img_1 from '@/public/slider_img_1.png';
+import slider_img_2 from '@/public/slider_img_2.webp';
+import slider_img_3 from '@/public/slider_img_3.jpg';
+import slider_img_4 from '@/public/slider_img_4.jpeg';
+import slider_img_5 from '@/public/slider_img_5.jpeg';
 
 export const Slider = () => {
   const [translate, setTranslate] = useState(0);
@@ -12,13 +18,43 @@ export const Slider = () => {
 
   return (
     <div className="mt-3 mx-4 mb-5 relative">
-      <div className="overflow-hidden flex">
+      <div className="overflow-hidden">
         <div className={`flex translate-x-[-${translate}%] duration-500`}>
-          <img src="/slider_img_1.png" alt="MSI banner" className="min-w-full" />
-          <img src="/slider_img_2.webp" alt="MSI banner" className="min-w-full" />
-          <img src="/slider_img_3.jpg" alt="MSI banner" className="min-w-full" />
-          <img src="/slider_img_4.jpeg" alt="MSI banner" className="min-w-full" />
-          <img src="/slider_img_5.jpeg" alt="MSI banner" className="min-w-full" />
+          <Image
+            src={slider_img_1.src}
+            width={slider_img_1.width}
+            height={slider_img_1.height}
+            alt="MSI banner"
+            className="min-w-full"
+          />
+          <Image
+            src={slider_img_2.src}
+            width={slider_img_2.width}
+            height={slider_img_2.height}
+            alt="MSI banner"
+            className="min-w-full"
+          />
+          <Image
+            src={slider_img_3.src}
+            width={slider_img_3.width}
+            height={slider_img_3.height}
+            alt="MSI banner"
+            className="min-w-full"
+          />
+          <Image
+            src={slider_img_4.src}
+            width={slider_img_4.width}
+            height={slider_img_4.height}
+            alt="MSI banner"
+            className="min-w-full"
+          />
+          <Image
+            src={slider_img_5.src}
+            width={slider_img_5.width}
+            height={slider_img_5.height}
+            alt="MSI banner"
+            className="min-w-full"
+          />
         </div>
       </div>
       {translate > 0 && (
