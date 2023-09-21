@@ -3,9 +3,10 @@ import React from 'react';
 interface ISearchInputProps {
   onclick?: () => void;
   placeholder: string;
+  focused?: boolean;
 }
 
-export const SearchInput: React.FC<ISearchInputProps> = ({ placeholder, onclick }) => {
+export const SearchInput: React.FC<ISearchInputProps> = ({ placeholder, onclick, focused }) => {
   return (
     <div className="flex grow" onClick={onclick}>
       <div className="absolute mt-2.5 ml-6">
@@ -21,6 +22,7 @@ export const SearchInput: React.FC<ISearchInputProps> = ({ placeholder, onclick 
       <input
         type="text"
         placeholder={placeholder}
+        autoFocus={focused || false}
         className="h-[2.375rem] rounded-3xl grow mx-[0.6rem] pl-[2.375rem] text-mobile focus:outline-none"
       />
     </div>

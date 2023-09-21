@@ -11,7 +11,7 @@ export const Search: React.FC<ISearchProps> = ({ searchState, searchFunction, mo
   if (mobile) {
     return (
       <>
-        {searchState && <SearchInput placeholder="Search for goods" />}
+        {searchState && <SearchInput placeholder="Search for goods" focused={true} />}
         {!searchState && <SearchInput placeholder="Search here" onclick={searchFunction} />}
       </>
     );
