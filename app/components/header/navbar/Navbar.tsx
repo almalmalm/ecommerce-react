@@ -9,13 +9,16 @@ import { NavigationMenu } from './navigation-menu/NavigationMenu';
 
 interface INavbarProps {
   mobile?: boolean;
-  onHeaderLogoStateChange?: (headerLogoState: boolean) => boolean;
+  handleCustomHeaderState?: (state: boolean) => void;
 }
 
-export const Navbar: React.FC<INavbarProps> = ({ mobile, onHeaderLogoStateChange }) => {
+export const Navbar: React.FC<INavbarProps> = ({ mobile, handleCustomHeaderState }) => {
   const [searchOpened, setSearchOpened] = useState(false);
   const openSearch = () => {
     setSearchOpened(!searchOpened);
+    if (handleCustomHeaderState) {
+      handleCustomHeaderState(searchOpened);
+    }
   };
 
   if (mobile) {
@@ -28,7 +31,7 @@ export const Navbar: React.FC<INavbarProps> = ({ mobile, onHeaderLogoStateChange
               <Logo mobile={mobile} custom={true} />
               <a
                 href="/our-deals"
-                className="text-white px-[1.625rem] py-[0.375rem] border-white border-2 rounded-full w-fit font-semibold mr-[1.375rem]"
+                className="text-white px-2 mobile:px-[1.625rem] py-[0.375rem] border-white border-2 rounded-full w-fit font-semibold mr-[1.375rem]"
               >
                 Our Deals
               </a>
@@ -41,6 +44,7 @@ export const Navbar: React.FC<INavbarProps> = ({ mobile, onHeaderLogoStateChange
         {!searchOpened && (
           <div className="h-16 bg-main-blue flex items-center justify-between">
             <HamburgerMenu />
+            <Logo mobile={mobile} />
             <Search mobile={mobile} searchState={searchOpened} searchFunction={openSearch} />
             <Cart mobile={mobile} />
             <Account mobile={mobile} />

@@ -14,6 +14,7 @@ const config: Config = {
         'main-blue': 'var(--color-main-blue)',
         'second-gray': 'var(--color-second-gray)',
         'third-gray': 'var(--color-third-gray)',
+        'fourth-gray': 'var(--color-fourth-gray)',
         'modal-shadow': 'var(--color-modal-shadow)',
       },
       screens: {

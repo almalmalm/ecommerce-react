@@ -8,7 +8,7 @@ import { Loader } from '../loader/Loader';
 export const Header = () => {
   const { width } = useWindowDimensions();
   const [isLoading, setIsLoading] = useState(true);
-
+  const [customHeader, setCustomHeader] = useState(false);
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsLoading(false);
@@ -23,8 +23,8 @@ export const Header = () => {
   if (width! < 1400) {
     return (
       <>
-        <Info mobile={true} />
-        <Navbar mobile={true} />
+        <Info mobile={true} custom={customHeader} />
+        <Navbar mobile={true} handleCustomHeaderState={(customHeader: boolean) => setCustomHeader(!customHeader)} />
       </>
     );
   } else {
