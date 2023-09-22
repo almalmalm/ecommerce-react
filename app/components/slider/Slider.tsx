@@ -7,6 +7,7 @@ import slider_img_3 from '@/public/slider_img_3.jpg';
 import slider_img_4 from '@/public/slider_img_4.jpeg';
 import slider_img_5 from '@/public/slider_img_5.jpeg';
 import { SliderArrow } from './SliderArrow';
+import { transform } from 'typescript';
 
 export const Slider = () => {
   const imgArr = [slider_img_1, slider_img_2, slider_img_3, slider_img_4, slider_img_5];
@@ -37,7 +38,7 @@ export const Slider = () => {
     // </div>
     <div className="mt-3 mx-4 mb-5 relative">
       <div className="overflow-hidden">
-        <div className={`flex justify-center translate-x-[${translateValue}%] duration-700`}>
+        <div className="flex justify-center duration-700" style={{ transform: `translate(${translateValue}%)` }}>
           <Image
             src={imgArr[prevIndex].src}
             width={imgArr[prevIndex].width}
