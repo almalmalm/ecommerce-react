@@ -16,12 +16,11 @@ export const Slider = () => {
   let nextIndex = index < 4 ? index + 1 : 0;
   const [translateValue, setTranslateValue] = useState(0);
   const scrollRight = () => {
-    // index > 3 ? setIndex(0) : setIndex(index + 1);
-    translateValue > 0 ? setTranslateValue(translateValue - 100) : setTranslateValue(-100);
+    translateValue > -400 ? setTranslateValue(translateValue - 100) : setTranslateValue(0);
   };
   const scrollLeft = () => {
     // index < 1 ? setIndex(4) : setIndex(index - 1);
-    translateValue < 0 ? setTranslateValue(translateValue + 100) : setTranslateValue(100);
+    translateValue < 0 ? setTranslateValue(translateValue + 100) : setTranslateValue(-400);
   };
 
   return (
@@ -38,14 +37,7 @@ export const Slider = () => {
     // </div>
     <div className="mt-3 mx-4 mb-5 relative">
       <div className="overflow-hidden">
-        <div className="flex justify-center duration-700" style={{ transform: `translate(${translateValue}%)` }}>
-          <Image
-            src={imgArr[prevIndex].src}
-            width={imgArr[prevIndex].width}
-            height={imgArr[prevIndex].height}
-            alt="Image"
-            className="min-w-full"
-          />
+        <div className="flex duration-700" style={{ transform: `translate(${translateValue}%)` }}>
           <Image
             src={imgArr[index].src}
             width={imgArr[index].width}
@@ -54,9 +46,30 @@ export const Slider = () => {
             className="min-w-full"
           />
           <Image
-            src={imgArr[nextIndex].src}
-            width={imgArr[nextIndex].width}
-            height={imgArr[nextIndex].height}
+            src={imgArr[index + 1].src}
+            width={imgArr[index + 1].width}
+            height={imgArr[index + 1].height}
+            alt="Image"
+            className="min-w-full"
+          />
+          <Image
+            src={imgArr[index + 2].src}
+            width={imgArr[index + 2].width}
+            height={imgArr[index + 2].height}
+            alt="Image"
+            className="min-w-full"
+          />
+          <Image
+            src={imgArr[index + 3].src}
+            width={imgArr[index + 3].width}
+            height={imgArr[index + 3].height}
+            alt="Image"
+            className="min-w-full"
+          />
+          <Image
+            src={imgArr[index + 4].src}
+            width={imgArr[index + 4].width}
+            height={imgArr[index + 4].height}
             alt="Image"
             className="min-w-full"
           />
