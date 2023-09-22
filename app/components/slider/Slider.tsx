@@ -30,6 +30,7 @@ export const Slider = () => {
               alt="Image"
               className="min-w-full"
               key={i}
+              priority={true}
             />
           ))}
         </div>
