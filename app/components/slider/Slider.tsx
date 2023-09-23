@@ -12,10 +12,10 @@ export const Slider = () => {
   const imgArr = [slider_img_1, slider_img_2, slider_img_3, slider_img_4, slider_img_5];
   const [translateValue, setTranslateValue] = useState(0);
   const scrollRight = () => {
-    translateValue > -400 ? setTranslateValue(translateValue - 100) : setTranslateValue(0);
+    translateValue > -400 ? setTranslateValue(translateValue - 100) : setTranslateValue(-400);
   };
   const scrollLeft = () => {
-    translateValue < 0 ? setTranslateValue(translateValue + 100) : setTranslateValue(-400);
+    translateValue < 0 ? setTranslateValue(translateValue + 100) : setTranslateValue(0);
   };
 
   return (
@@ -35,8 +35,8 @@ export const Slider = () => {
           ))}
         </div>
       </div>
-      <SliderArrow type="right" onclick={scrollRight} />
-      <SliderArrow type="left" onclick={scrollLeft} />
+      {translateValue < 0 && <SliderArrow type="left" onclick={scrollLeft} />}
+      {translateValue > -400 && <SliderArrow type="right" onclick={scrollRight} />}
     </div>
   );
 };
