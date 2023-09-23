@@ -10,11 +10,14 @@ const config: Config = {
     extend: {
       colors: {
         'main-black': 'var(--color-main-black)',
+        'second-black': 'var(--color-second-black)',
         'main-gray': 'var(--color-main-gray)',
         'main-blue': 'var(--color-main-blue)',
+        'main-green': 'var(--color-main-green)',
         'second-gray': 'var(--color-second-gray)',
         'third-gray': 'var(--color-third-gray)',
         'fourth-gray': 'var(--color-fourth-gray)',
+        'fifth-gray': 'var(--color-fifth-gray)',
         'modal-shadow': 'var(--color-modal-shadow)',
       },
       screens: {
@@ -30,6 +33,7 @@ const config: Config = {
       fontSize: {
         mobile_small: '0.55rem',
         mobile: '0.6875rem',
+        ten: '0.625rem',
       },
     },
   },

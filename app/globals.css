@@ -4,10 +4,13 @@
 
 :root {
   --color-main-black: #020202;
+  --color-second-black: #000000;
   --color-main-blue: #0156ff;
   --color-main-gray: #a2a6b0;
+  --color-main-green: #78a962;
   --color-second-gray: #cacdd8;
   --color-third-gray: #f5f7ff;
   --color-fourth-gray: #acacac;
+  --color-fifth-gray: #666666;
   --color-modal-shadow: #02020240;
 }

@@ -7,8 +7,8 @@ import { Loader } from '../loader/Loader';
 
 export const Header = () => {
   const { width } = useWindowDimensions();
-  const [isLoading, setIsLoading] = useState(true);
   const [customHeader, setCustomHeader] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsLoading(false);
