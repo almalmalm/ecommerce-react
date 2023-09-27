@@ -1,6 +1,6 @@
 import React from 'react';
 import { ProductCard } from '../product-card/ProductCard';
-import iphone_img from '@/public/iphone_image.jpeg';
+import data from '@/app/data.json';
 
 export const NewProducts = () => {
   return (
@@ -12,22 +12,17 @@ export const NewProducts = () => {
         </a>
       </div>
       <div className="flex justify-center">
-        <ProductCard
-          stock="in stock"
-          img={iphone_img}
-          reviews={0}
-          title="EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On..."
-          priceOld={499.0}
-          priceNew={499.0}
-        />
-        <ProductCard
-          stock="in stock"
-          img={iphone_img}
-          reviews={0}
-          title="EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On..."
-          priceOld={499.0}
-          priceNew={499.0}
-        />
+        {data.data.products.map((product, i) => (
+          <ProductCard
+            stock={product.status}
+            img={product.url}
+            reviews={product.reviews}
+            title={product.name}
+            priceOld={product.price.price_old}
+            priceNew={product.price.price_new}
+            key={i}
+          />
+        ))}
       </div>
     </div>
   );

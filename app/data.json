@@ -1,0 +1,26 @@
+{
+  "data": {
+    "products": [
+      {
+        "name": "Lenovo Tab M9-2023 - Tablet - Long Battery Life - 9&#34; HD - Front 2MP &amp; Rear 8MP Camera - 3GB Memory - 32GB Storage - Android 12 or Later - Folio Case Included,Gray",
+        "url": "/618mxQZWt1L._AC._SR360,460.jpg",
+        "status": "in stock",
+        "price": {
+          "price_old": 229.99,
+          "price_new": 179.99
+        },
+        "reviews": [{ "rating": 4 }, { "rating": 5 }, { "rating": 4 }]
+      },
+      {
+        "name": "MSI Stealth GS66 Gaming Laptop: Intel Core i9-12900H, GeForce RTX 3070 Ti, 15.6\" 360Hz Display, 32GB DDR5, 1TB NVMe SSD, Thunderbolt 4, Cooler Boost Trinity+, Win 11 Home: Core Black 12UGS-025",
+        "url": "/71OVKBw9C2L._AC_UL640_FMwebp_QL65_.webp",
+        "status": "in stock",
+        "price": {
+          "price_old": 1699.0,
+          "price_new": 2499.0
+        },
+        "reviews": [{ "rating": 1 }]
+      }
+    ]
+  }
+}
