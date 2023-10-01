@@ -1,26 +1,118 @@
 {
   "data": {
-    "products": [
-      {
-        "name": "Lenovo Tab M9-2023 - Tablet - Long Battery Life - 9&#34; HD - Front 2MP &amp; Rear 8MP Camera - 3GB Memory - 32GB Storage - Android 12 or Later - Folio Case Included,Gray",
-        "url": "/618mxQZWt1L._AC._SR360,460.jpg",
-        "status": "in stock",
-        "price": {
-          "price_old": 229.99,
-          "price_new": 179.99
+    "products": {
+      "custom_builds": [
+        {
+          "name": "Thermaltake Arctic i360T R4 AIO Liquid Cooled Gaming Desktop (Intel Core™ i5-12600KF, Toughram DDR4 3600Mhz 16GB Memory, NVIDIA® GeForce RTX™ 3060 Ti, 1TB NVMe M.2, Win10 Home) P3AR-Z69R-36T-LCS",
+          "url": "/81pOUMuthXL._AC_UY436_FMwebp_QL65_.webp",
+          "status": "in stock",
+          "price": {
+            "price_old": 1999.99,
+            "price_new": 1502.81
+          },
+          "reviews": [
+            { "rating": 4 },
+            { "rating": 5 },
+            { "rating": 4 },
+            { "rating": 1 },
+            { "rating": 5 },
+            { "rating": 4 },
+            { "rating": 4 },
+            { "rating": 5 },
+            { "rating": 4 },
+            { "rating": 3 },
+            { "rating": 5 },
+            { "rating": 4 },
+            { "rating": 5 },
+            { "rating": 5 },
+            { "rating": 5 }
+          ]
         },
-        "reviews": [{ "rating": 4 }, { "rating": 5 }, { "rating": 4 }]
-      },
-      {
-        "name": "MSI Stealth GS66 Gaming Laptop: Intel Core i9-12900H, GeForce RTX 3070 Ti, 15.6\" 360Hz Display, 32GB DDR5, 1TB NVMe SSD, Thunderbolt 4, Cooler Boost Trinity+, Win 11 Home: Core Black 12UGS-025",
-        "url": "/71OVKBw9C2L._AC_UL640_FMwebp_QL65_.webp",
-        "status": "in stock",
-        "price": {
-          "price_old": 1699.0,
-          "price_new": 2499.0
+        {
+          "name": "ROG Strix G15 Gaming Desktop PC, Intel Core i7-12700F, GeForce RTX 3060 12GB, 16GB DDR4 RAM, 1TB PCIe 4.0 SSD, Windows 11 Home, G15CF-AB766",
+          "url": "/813Nab75aQL._AC_UY436_FMwebp_QL65_.webp",
+          "status": "in stock",
+          "price": {
+            "price_old": 1429.99,
+            "price_new": 1260.72
+          },
+          "reviews": [
+            { "rating": 5 },
+            { "rating": 4 },
+            { "rating": 4 },
+            { "rating": 5 },
+            { "rating": 4 },
+            { "rating": 5 },
+            { "rating": 4 },
+            { "rating": 5 },
+            { "rating": 5 },
+            { "rating": 5 }
+          ]
+        }
+      ],
+      "laptops": [
+        {
+          "name": "Apple 2020 MacBook Air Laptop M1 Chip, 13\" Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Silver",
+          "url": "/71TPda7cwUL._AC_UY436_FMwebp_QL65_.webp",
+          "status": "in stock",
+          "price": {
+            "price_old": 999.99,
+            "price_new": 753.59
+          },
+          "reviews": [
+            { "rating": 5 },
+            { "rating": 5 },
+            { "rating": 5 },
+            { "rating": 5 },
+            { "rating": 5 },
+            { "rating": 5 },
+            { "rating": 5 }
+          ]
         },
-        "reviews": [{ "rating": 1 }]
-      }
-    ]
+        {
+          "name": "Apple 2023 MacBook Air Laptop with M2 chip: 15.3-inch Liquid Retina Display, 8GB Unified Memory, 512GB SSD Storage, 1080p FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Silver",
+          "url": "/71S4sIPFvBL._AC_UY436_FMwebp_QL65_.webp",
+          "status": "in stock",
+          "price": {
+            "price_old": 1699.99,
+            "price_new": 1464.99
+          },
+          "reviews": [
+            { "rating": 5 },
+            { "rating": 4 },
+            { "rating": 4 },
+            { "rating": 5 },
+            { "rating": 4 },
+            { "rating": 5 },
+            { "rating": 4 },
+            { "rating": 5 },
+            { "rating": 5 },
+            { "rating": 5 }
+          ]
+        }
+      ],
+      "new_products": [
+        {
+          "name": "Lenovo Tab M9-2023 - Tablet - Long Battery Life - 9&#34; HD - Front 2MP &amp; Rear 8MP Camera - 3GB Memory - 32GB Storage - Android 12 or Later - Folio Case Included,Gray",
+          "url": "/618mxQZWt1L._AC._SR360,460.jpg",
+          "status": "in stock",
+          "price": {
+            "price_old": 229.99,
+            "price_new": 179.99
+          },
+          "reviews": [{ "rating": 4 }, { "rating": 5 }, { "rating": 4 }]
+        },
+        {
+          "name": "MSI Stealth GS66 Gaming Laptop: Intel Core i9-12900H, GeForce RTX 3070 Ti, 15.6\" 360Hz Display, 32GB DDR5, 1TB NVMe SSD, Thunderbolt 4, Cooler Boost Trinity+, Win 11 Home: Core Black 12UGS-025",
+          "url": "/71OVKBw9C2L._AC_UL640_FMwebp_QL65_.webp",
+          "status": "in stock",
+          "price": {
+            "price_old": 2499.0,
+            "price_new": 1699.0
+          },
+          "reviews": [{ "rating": 1 }]
+        }
+      ]
+    }
   }
 }

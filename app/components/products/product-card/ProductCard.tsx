@@ -1,18 +1,20 @@
 import Image from 'next/image';
 import React from 'react';
-import { Rating } from './Rating';
+import { Rating } from './rating/Rating';
 
-interface IProductCardProps {
-  stock: string;
-  img: string;
+export interface IProductCardProps {
+  status: string;
+  url: string;
   rating?: number;
   reviews: { rating: number }[];
-  title: string;
-  priceOld: number;
-  priceNew: number;
+  name: string;
+  price: {
+    price_old: number;
+    price_new: number;
+  };
 }
 
-export const ProductCard: React.FC<IProductCardProps> = ({ stock, img, reviews, title, priceOld, priceNew }) => {
+export const ProductCard: React.FC<IProductCardProps> = ({ status, url, reviews, name, price }) => {
   let reviewsSum = 0;
   reviews.forEach((review) => (reviewsSum += review.rating));
   const rating = parseFloat((reviewsSum / reviews.length).toFixed(1));
@@ -25,11 +27,11 @@ export const ProductCard: React.FC<IProductCardProps> = ({ stock, img, reviews, 
             <path d="M7.75 4L5.23404 7L3.75 5.27853" stroke="white" strokeLinecap="round" />
           </svg>
         </div>
-        <div className="text-main-green">{stock}</div>
+        <div className="text-main-green">{status}</div>
       </div>
       <div className="flex justify-center w-[6.25rem] h-[6.25rem]">
         <Image
-          src={img}
+          src={url}
           alt="Product image"
           width={0}
           height={0}
@@ -42,11 +44,15 @@ export const ProductCard: React.FC<IProductCardProps> = ({ stock, img, reviews, 
         <Rating rating={rating} />
         <div className="text-main-gray">Reviews({reviews.length})</div>
       </div>
-      <div className="text-mobile my-2" title={title}>
-        {title.substring(0, 55)}...
+      <div className="text-mobile my-2" title={name}>
+        {name.substring(0, 55)}...
       </div>
-      <div className="text-fifth-gray text-xs line-through">${(Math.round(priceOld * 100) / 100).toFixed(2)}</div>
-      <div className="text-sm text-second-black font-semibold">${(Math.round(priceNew * 100) / 100).toFixed(2)}</div>
+      <div className="text-fifth-gray text-xs line-through">
+        ${(Math.round(price.price_old * 100) / 100).toFixed(2)}
+      </div>
+      <div className="text-sm text-second-black font-semibold">
+        ${(Math.round(price.price_new * 100) / 100).toFixed(2)}
+      </div>
     </div>
   );
 };

@@ -13,6 +13,8 @@ const config: Config = {
         'second-black': 'var(--color-second-black)',
         'main-gray': 'var(--color-main-gray)',
         'main-blue': 'var(--color-main-blue)',
+        'second-blue': 'var(--color-second-blue)',
+        'third-blue': 'var(--color-third-blue)',
         'main-green': 'var(--color-main-green)',
         'second-gray': 'var(--color-second-gray)',
         'third-gray': 'var(--color-third-gray)',

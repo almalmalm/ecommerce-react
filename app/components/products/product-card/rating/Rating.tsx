@@ -6,8 +6,6 @@ interface IRatingProps {
 }
 
 export const Rating: React.FC<IRatingProps> = ({ rating }) => {
-  console.log(rating);
-
   if (rating >= 1 && rating <= 2) {
     return (
       <div className="flex">

@@ -1,8 +1,7 @@
 import React from 'react';
-import { ProductCard } from '../product-card/ProductCard';
-import data from '@/app/data.json';
+import { IProductSliderProps, ProductSlider } from '../product-slider/ProductSlider';
 
-export const NewProducts = () => {
+export const NewProducts: React.FC<IProductSliderProps> = ({ products }) => {
   return (
     <div className="mx-4">
       <div className="flex justify-between items-center">
@@ -11,19 +10,7 @@ export const NewProducts = () => {
           See All New Products
         </a>
       </div>
-      <div className="flex justify-center">
-        {data.data.products.map((product, i) => (
-          <ProductCard
-            stock={product.status}
-            img={product.url}
-            reviews={product.reviews}
-            title={product.name}
-            priceOld={product.price.price_old}
-            priceNew={product.price.price_new}
-            key={i}
-          />
-        ))}
-      </div>
+      <ProductSlider products={products} />
     </div>
   );
 };
