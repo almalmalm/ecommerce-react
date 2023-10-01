@@ -52,7 +52,7 @@
       ],
       "laptops": [
         {
-          "name": "Apple 2020 MacBook Air Laptop M1 Chip, 13\" Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Silver",
+          "name": "Apple 2020 MacBook Air Laptop M1 Chip, 13\" Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Silver",
           "url": "/71TPda7cwUL._AC_UY436_FMwebp_QL65_.webp",
           "status": "in stock",
           "price": {
@@ -70,7 +70,7 @@
           ]
         },
         {
-          "name": "Apple 2023 MacBook Air Laptop with M2 chip: 15.3-inch Liquid Retina Display, 8GB Unified Memory, 512GB SSD Storage, 1080p FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Silver",
+          "name": "Apple 2023 MacBook Air Laptop with M2 chip: 15.3-inch Liquid Retina Display, 8GB Unified Memory, 512GB SSD Storage, 1080p FaceTime HD Camera, Touch ID. Silver",
           "url": "/71S4sIPFvBL._AC_UY436_FMwebp_QL65_.webp",
           "status": "in stock",
           "price": {
@@ -111,6 +111,28 @@
             "price_new": 1699.0
           },
           "reviews": [{ "rating": 1 }]
+        }
+      ],
+      "gaming_monitors": [
+        {
+          "name": "MSI G2712, 27\" Gaming Monitor, 1920 x 1080 (FHD), IPS, 1ms, 170Hz, FreeSync Premium, HDMI, Displayport, Tilt,Black",
+          "url": "/61kpJT1TqHL._AC_UY436_FMwebp_QL65_.webp",
+          "status": "in stock",
+          "price": {
+            "price_old": 219.99,
+            "price_new": 159.99
+          },
+          "reviews": [{ "rating": 5 }, { "rating": 5 }]
+        },
+        {
+          "name": "MSI G27C4X 27\" Curved Gaming Monitor, 1920 x 1080 (FHD), 1ms, 250Hz, FreeSync, HDMI, DisplayPort, Anti-Flicker, Anti-Glare, HDR Ready,Black",
+          "url": "/71Rcg0lXJrL._AC_UY436_FMwebp_QL65_.webp",
+          "status": "in stock",
+          "price": {
+            "price_old": 219.99,
+            "price_new": 197.99
+          },
+          "reviews": [{ "rating": 1 }, { "rating": 2 }, { "rating": 3 }]
         }
       ]
     }

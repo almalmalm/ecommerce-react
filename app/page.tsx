@@ -32,7 +32,7 @@ export default function Home() {
         <ProductCategory
           name="Gaming Monitors"
           bgImgUrl='bg-[url("/image_33.jpg")]'
-          products={data.data.products.laptops}
+          products={data.data.products.gaming_monitors}
         />
         <Brands />
       </main>
